@@ -25,7 +25,7 @@ const servicios = [
   {
     titulo: "CABELLO",
     emoji: "💇",
-    items: ["Extensiones — Cabello humano", "Extensiones — Clon humano", "Alisados"],
+    items: ["Extensiones — Cabello humano", "Extensiones — Cabello clon humano", "Alisados"],
     bg: "from-rose-50 to-pink-50",
     ruta: "/cabello",
   },
