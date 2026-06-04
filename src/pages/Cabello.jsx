@@ -5,11 +5,11 @@ import { ArrowLeft, Calendar, ChevronLeft, ChevronRight, X, Play } from "lucide-
 const CALENDLY_URL = "https://calendly.com/tu-usuario"
 
 const videosAlisados = [
-  "/lo-de-maria/cabello/alisados/video1.mp4",
-  "/lo-de-maria/cabello/alisados/video2.mp4",
-  "/lo-de-maria/cabello/alisados/video3.mp4",
-  "/lo-de-maria/cabello/alisados/video4.mp4",
-  "/lo-de-maria/cabello/alisados/video5.mp4",
+  "/MM_AmysArt/cabello/alisado1.mp4",
+  "/MM_AmysArt/cabello/alisado2.mp4",
+  "/MM_AmysArt/cabello/alisado3.mp4",
+  "/MM_AmysArt/cabello/alisado4.mp4",
+  "/MM_AmysArt/cabello/alisado5.mp4",
 ]
 
 function GaleriaVideos({ videos, onSeleccionar }) {
