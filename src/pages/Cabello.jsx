@@ -92,7 +92,7 @@ export default function Cabello() {
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-sm text-center">
               <div className="text-3xl mb-2">💫</div>
-              <h3 className="font-bold text-gray-800 mb-1">Clon humano</h3>
+              <h3 className="font-bold text-gray-800 mb-1">Cabello clon humano</h3>
               <p className="text-sm text-gray-500">Apariencia idéntica al cabello natural a un precio más accesible.</p>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function Cabello() {
           <h2 className="font-display text-2xl text-gray-700 mb-4">Cabello humano — Fotos</h2>
           <Proximamente tipo="foto" />
 
-          <h2 className="font-display text-2xl text-gray-700 mb-4">Clon humano — Fotos</h2>
+          <h2 className="font-display text-2xl text-gray-700 mb-4">Cabello clon humano — Fotos</h2>
           <Proximamente tipo="foto" />
 
           <h2 className="font-display text-2xl text-gray-700 mb-4">Videos</h2>
