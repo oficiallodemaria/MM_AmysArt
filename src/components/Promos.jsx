@@ -1,12 +1,12 @@
 const precios = [
-  { nombre: "Gelish + Manicure", precio: "$180", emoji: "💅", tipo: "precio" },
+  { nombre: "Gelish + Manicure", precio: "$180", emoji: "💅", tipo: "destacado" },
   { nombre: "Uñas Esculturales #1", precio: "$340", emoji: "💅", tipo: "precio" },
   { nombre: "Uñas Esculturales #2", precio: "$380", emoji: "💅", tipo: "precio" },
   { nombre: "Uñas Esculturales #3", precio: "$420", emoji: "💅", tipo: "precio" },
   { nombre: "Uñas Esculturales #4", precio: "$460", emoji: "💅", tipo: "precio" },
   { nombre: "Retoque de Uñas", precio: "$250", emoji: "✨", tipo: "precio" },
   { nombre: "Retiro de Uñas", precio: "$150", emoji: "🌸", tipo: "precio" },
-  { nombre: "Microblading", precio: "$1,700", emoji: "✏️", tipo: "destacado" },
+  { nombre: "Microblading", precio: "$1,700", emoji: "✏️", tipo: "precio" },
   { nombre: "Microshading", precio: "$2,100", emoji: "🎨", tipo: "destacado" },
 ]
 
