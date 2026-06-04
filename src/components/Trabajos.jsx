@@ -2,18 +2,18 @@ import { useState } from "react"
 import { ChevronLeft, ChevronRight, X } from "lucide-react"
 
 const trabajos = [
-  "/lo-de-maria/trabajos/1.jpeg",
-  "/lo-de-maria/trabajos/2.jpeg",
-  "/lo-de-maria/trabajos/3.jpeg",
-  "/lo-de-maria/trabajos/4.jpeg",
-  "/lo-de-maria/trabajos/5.jpeg",
-  "/lo-de-maria/trabajos/6.jpeg",
-  "/lo-de-maria/trabajos/7.jpeg",
-  "/lo-de-maria/trabajos/8.jpeg",
-  "/lo-de-maria/trabajos/9.jpeg",
-  "/lo-de-maria/trabajos/10.jpeg",
-  "/lo-de-maria/trabajos/11.jpeg",
-  "/lo-de-maria/trabajos/12.jpeg",
+  "/MM_AmysArt/trabajos/1.jpeg",
+  "/MM_AmysArt/trabajos/2.jpeg",
+  "/MM_AmysArt/trabajos/3.jpeg",
+  "/MM_AmysArt/trabajos/4.jpeg",
+  "/MM_AmysArt/trabajos/5.jpeg",
+  "/MM_AmysArt/trabajos/6.jpeg",
+  "/MM_AmysArt/trabajos/7.jpeg",
+  "/MM_AmysArt/trabajos/8.jpeg",
+  "/MM_AmysArt/trabajos/9.jpeg",
+  "/MM_AmysArt/trabajos/10.jpeg",
+  "/MM_AmysArt/trabajos/11.jpeg",
+  "/MM_AmysArt/trabajos/12.jpeg",
 ]
 
 const VISIBLES = 4
