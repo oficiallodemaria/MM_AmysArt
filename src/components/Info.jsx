@@ -1,11 +1,11 @@
-import { MapPin, Clock, Star, Calendar } from "lucide-react"
+import { MapPin, Clock, Calendar } from "lucide-react"
 
 const CALENDLY_URL = "https://calendly.com/tu-usuario"
 
 export default function Info() {
   return (
     <section className="py-20 bg-rose-50">
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-10">
+      <div className="max-w-4xl mx-auto px-4 grid md:grid-cols-2 gap-10">
 
         <div id="ubicacion">
           <div className="flex items-center gap-2 mb-4">
@@ -42,31 +42,6 @@ export default function Info() {
             <p className="text-sm font-semibold text-rose-400 mb-1">Atención con cita previa</p>
             <p className="text-xs text-gray-500 mb-3">¡Agenda tu cita y asegura tu lugar!</p>
             <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-block bg-rose-400 text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-rose-500 transition-colors">Agendar ahora</a>
-          </div>
-        </div>
-
-        <div id="contacto">
-          <div className="flex items-center gap-2 mb-4">
-            <Star size={20} className="text-rose-400" />
-            <h2 className="font-display text-2xl text-gray-800">Testimonios</h2>
-          </div>
-          <div className="flex flex-col gap-4">
-            <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-sm text-gray-600 italic mb-3">"María es la mejor, siempre entiende lo que quiero y deja todo hermoso. ¡Súper recomendada! 💕"</p>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-rose-200 rounded-full flex items-center justify-center text-sm font-bold text-rose-500">A</div>
-                <p className="text-xs text-gray-500 font-semibold">— Ana G.</p>
-              </div>
-              <div className="flex gap-1 mt-2">{[...Array(5)].map((_, i) => <span key={i} className="text-yellow-400 text-xs">★</span>)}</div>
-            </div>
-            <div className="bg-white rounded-2xl p-5 shadow-sm">
-              <p className="text-sm text-gray-600 italic mb-3">"Me encantó el resultado de mis extensiones, quedaron naturales y hermosas. ¡Volveré pronto! 🌸"</p>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-rose-200 rounded-full flex items-center justify-center text-sm font-bold text-rose-500">L</div>
-                <p className="text-xs text-gray-500 font-semibold">— Laura M.</p>
-              </div>
-              <div className="flex gap-1 mt-2">{[...Array(5)].map((_, i) => <span key={i} className="text-yellow-400 text-xs">★</span>)}</div>
-            </div>
           </div>
         </div>
 
