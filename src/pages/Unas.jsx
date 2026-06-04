@@ -11,21 +11,21 @@ const servicios = [
 ]
 
 const fotos = [
-  "/lo-de-maria/unas/1.jpeg",
-  "/lo-de-maria/unas/2.jpeg",
-  "/lo-de-maria/unas/3.jpeg",
-  "/lo-de-maria/unas/4.jpeg",
-  "/lo-de-maria/unas/5.jpeg",
-  "/lo-de-maria/unas/6.jpeg",
-  "/lo-de-maria/unas/7.jpeg",
-  "/lo-de-maria/unas/8.jpeg",
-  "/lo-de-maria/unas/9.jpeg",
-  "/lo-de-maria/unas/10.jpeg",
-  "/lo-de-maria/unas/11.jpeg",
-  "/lo-de-maria/unas/12.jpeg",
-  "/lo-de-maria/unas/13.jpeg",
-  "/lo-de-maria/unas/14.jpeg",
-  "/lo-de-maria/unas/15.jpeg",
+  "/MM_AmysArt/unas/1.jpeg",
+  "/MM_AmysArt/unas/2.jpeg",
+  "/MM_AmysArt/unas/3.jpeg",
+  "/MM_AmysArt/unas/4.jpeg",
+  "/MM_AmysArt/unas/5.jpeg",
+  "/MM_AmysArt/unas/6.jpeg",
+  "/MM_AmysArt/unas/7.jpeg",
+  "/MM_AmysArt/unas/8.jpeg",
+  "/MM_AmysArt/unas/9.jpeg",
+  "/MM_AmysArt/unas/10.jpeg",
+  "/MM_AmysArt/unas/11.jpeg",
+  "/MM_AmysArt/unas/12.jpeg",
+  "/MM_AmysArt/unas/13.jpeg",
+  "/MM_AmysArt/unas/14.jpeg",
+  "/MM_AmysArt/unas/15.jpeg",
 ]
 
 const videos = [
