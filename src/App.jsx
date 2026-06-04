@@ -6,7 +6,7 @@ import Cabello from "./pages/Cabello"
 
 export default function App() {
   return (
-    <BrowserRouter basename="/lo-de-maria">
+    <BrowserRouter basename="/MM_AmysArt">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/unas" element={<Unas />} />
