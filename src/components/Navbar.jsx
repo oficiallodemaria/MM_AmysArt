@@ -10,7 +10,7 @@ export default function Navbar({ calendlyUrl }) {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-24">
         <div>
-          <img src="/lo-de-maria/logo.png" alt="Lo de María" className="h-20 w-auto" />
+          <img src="/MM_AmysArt/logo.png" alt="Lo de María" className="h-20 w-auto" />
         </div>
 
         <ul className="hidden md:flex items-center gap-6">
