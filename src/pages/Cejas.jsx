@@ -5,19 +5,11 @@ import { ArrowLeft, Calendar, ChevronLeft, ChevronRight, X } from "lucide-react"
 const CALENDLY_URL = "https://calendly.com/tu-usuario"
 
 const fotosMicroblading = [
-  "/MM_AmysArt/cejas/1.jpg",
-  "/MM_AmysArt/cejas/2.jpg",
-  "/MM_AmysArt/cejas/3.jpg",
-  "/MM_AmysArt/cejas/4.jpg",
-  "/MM_AmysArt/cejas/5.jpg",
+  "/MM_AmysArt/cejas/1.jpeg",
 ]
 
 const fotosMicroshading = [
-  "/MM_AmysArt/cejas/1.jpg",
-  "/MM_AmysArt/cejas/2.jpg",
-  "/MM_AmysArt/cejas/3.jpg",
-  "/MM_AmysArt/cejas/4.jpg",
-  "/MM_AmysArt/cejas/5.jpg",
+  "/MM_AmysArt/cejas/2.jpeg",
 ]
 
 function Galeria({ fotos, onSeleccionar }) {
