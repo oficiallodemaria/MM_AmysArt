@@ -16,10 +16,17 @@ const servicios = [
     ruta: "/pestanas",
   },
   {
-    titulo: "EXTENSIONES DE CABELLO",
-    emoji: "💇",
-    items: ["Cabello humano", "Clon humano"],
+    titulo: "CEJAS",
+    emoji: "✏️",
+    items: ["Microblading", "Microshading"],
     bg: "from-pink-50 to-rose-50",
+    ruta: "/cejas",
+  },
+  {
+    titulo: "CABELLO",
+    emoji: "💇",
+    items: ["Extensiones — Cabello humano", "Extensiones — Clon humano", "Alisados"],
+    bg: "from-rose-50 to-pink-50",
     ruta: "/cabello",
   },
 ]
@@ -33,31 +40,23 @@ export default function Servicios() {
           <div className="text-rose-400 text-2xl">♥</div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {servicios.map((s) => (
             <div key={s.titulo} className="border border-rose-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
               <div className={`h-48 bg-gradient-to-br ${s.bg} flex items-center justify-center text-7xl`}>
                 {s.emoji}
               </div>
-              <div className="p-6 flex justify-between items-start">
-                <div className="flex-1">
-                  <h3 className="font-bold text-gray-800 text-sm tracking-wide mb-3">{s.titulo}</h3>
-                  <ul className="space-y-1 mb-4">
-                    {s.items.map(i => (
-                      <li key={i} className="text-sm text-gray-500 flex items-center gap-2">
-                        <span className="w-1 h-1 bg-rose-300 rounded-full inline-block" />
-                        {i}
-                      </li>
-                    ))}
-                  </ul>
-                  <Link to={s.ruta}
-                    className="inline-block text-xs font-semibold text-rose-400 border border-rose-300 px-3 py-1.5 rounded-full hover:bg-rose-400 hover:text-white transition-colors">
-                    Ver más →
-                  </Link>
-                </div>
-                <div className="w-10 h-10 bg-rose-100 rounded-full flex items-center justify-center text-xl flex-shrink-0">
-                  {s.emoji}
-                </div>
+              <div className="p-6">
+                <h3 className="font-bold text-gray-800 text-sm tracking-wide mb-3">{s.titulo}</h3>
+                <ul className="space-y-1 mb-4">
+                  {s.items.map(i => (
+                    <li key={i} className="text-sm text-gray-500 flex items-center gap-2">
+                      <span className="w-1 h-1 bg-rose-300 rounded-full inline-block flex-shrink-0" />
+                      {i}
+                    </li>
+                  ))}
+                </ul>
+                <Link to={s.ruta} className="inline-block text-xs font-semibold text-rose-400 border border-rose-300 px-3 py-1.5 rounded-full hover:bg-rose-400 hover:text-white transition-colors">Ver más →</Link>
               </div>
             </div>
           ))}

@@ -3,6 +3,7 @@ import Home from "./pages/Home"
 import Unas from "./pages/Unas"
 import Pestanas from "./pages/Pestanas"
 import Cabello from "./pages/Cabello"
+import Cejas from "./pages/Cejas"
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Route path="/unas" element={<Unas />} />
         <Route path="/pestanas" element={<Pestanas />} />
         <Route path="/cabello" element={<Cabello />} />
+        <Route path="/cejas" element={<Cejas />} />
       </Routes>
     </BrowserRouter>
   )

@@ -8,7 +8,7 @@ export default function Hero({ calendlyUrl }) {
         <a href="#"><MessageCircle size={15} /></a>
       </div>
       <div className="relative w-full">
-        <img src="/MM_AmysArt/fondoo.png" alt="Bienvenida a Lo de Maria" className="w-full object-cover" />
+        <img src="/maria/fondoo.png" alt="Bienvenida a Lo de Maria" className="w-full object-cover" />
         <div className="absolute bottom-6 left-1/5 -translate-x-1/2">
           <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-transparent text-white font-semibold px-6 py-3 rounded-full">
             <Calendar size={16} />
