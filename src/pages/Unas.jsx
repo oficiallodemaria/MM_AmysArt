@@ -29,9 +29,9 @@ const fotos = [
 ]
 
 const videos = [
-  "/MM_AmysArt/unas/uñas1.mp4",
-  "/MM_AmysArt/unas/uñas2.mp4",
-  "/MM_AmysArt/unas/uñas3.mp4",
+  "/MM_AmysArt/unas/unas1.mp4",
+  "/MM_AmysArt/unas/unas2.mp4",
+  "/MM_AmysArt/unas/unas3.mp4",
 ]
 
 export default function Unas() {
