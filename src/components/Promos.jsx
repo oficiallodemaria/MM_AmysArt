@@ -7,7 +7,7 @@ const precios = [
   { nombre: "Retoque de Uñas", precio: "$250", emoji: "✨", tipo: "precio" },
   { nombre: "Retiro de Uñas", precio: "$150", emoji: "🌸", tipo: "precio" },
   { nombre: "Microblading", precio: "$1,700", emoji: "✏️", tipo: "precio" },
-  { nombre: "Microshading", precio: "$2,100", emoji: "🎨", tipo: "destacado" },
+  { nombre: "Microshading", precio: "$2,100", emoji: "🎨", tipo: "precio" },
 ]
 
 export default function Promos() {
