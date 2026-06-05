@@ -32,7 +32,7 @@ export default function Footer({ calendlyUrl }) {
           </a>
         </div>
 
-        <p className="text-xs text-gray-300">© 2025 Lo de María. Todos los derechos reservados.</p>
+        <p className="text-xs text-gray-300">© 2026 MM Nails Art. Todos los derechos reservados.</p>
       </div>
     </footer>
   )
