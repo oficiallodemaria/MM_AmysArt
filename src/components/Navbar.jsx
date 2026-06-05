@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Calendar, Menu, X } from "lucide-react"
 
-const links = ["Inicio","Servicios","Trabajos","Promos","Ubicación","Horarios","Contacto"]
+const links = ["Inicio","Servicios","Trabajos","Precios y Promos","Ubicación","Horarios","Contacto"]
 
 export default function Navbar({ calendlyUrl }) {
   const [open, setOpen] = useState(false)
