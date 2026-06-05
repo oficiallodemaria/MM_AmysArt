@@ -25,7 +25,7 @@ const servicios = [
   {
     titulo: "Cabello",
     subtitulo: "Transforma tu look",
-    items: ["Extensiones — Cabello humano", "Extensiones — Clon humano", "Alisados"],
+    items: ["Extensiones — Cabello humano", "Extensiones — Cabello clon humano", "Alisados"],
     imagen: "/MM_AmysArt/servicios/cabello.jpeg",
     ruta: "/cabello",
   },
