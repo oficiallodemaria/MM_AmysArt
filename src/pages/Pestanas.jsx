@@ -18,7 +18,6 @@ const fotos = [
   "/MM_AmysArt/pestanas/6.jpeg",
   "/MM_AmysArt/pestanas/7.jpeg",
   "/MM_AmysArt/pestanas/8.jpeg",
-  "/MM_AmysArt/pestanas/9.jpeg",
 ]
 
 const videos = [
