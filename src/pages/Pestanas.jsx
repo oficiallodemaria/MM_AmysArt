@@ -115,7 +115,7 @@ export default function Pestanas() {
           </div>
           <button onClick={() => setModalAbierto(true)} className="inline-flex items-center gap-2 bg-rose-400 hover:bg-rose-500 text-white font-semibold px-10 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105">
            <Calendar size={16} />
-             Agendar cita
+             Agendar cita/Cotizar
           </button>
         </div>
 

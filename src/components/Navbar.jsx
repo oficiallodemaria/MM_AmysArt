@@ -36,7 +36,7 @@ export default function Navbar() {
             ))}
             <button onClick={() => { setModalAbierto(true); setOpen(false) }} className="flex items-center justify-center gap-2 bg-rose-400 text-white text-sm font-semibold px-4 py-2 rounded-full mt-2">
               <Calendar size={15} />
-              Agendar cita
+              Agendar cita/Cotizar
             </button>
           </div>
         )}

@@ -12,7 +12,7 @@ export default function Footer() {
           <img src="/MM_AmysArt/logo.png" alt="MM Nails Art" className="h-20 w-auto object-contain" />
           <button onClick={() => setModalAbierto(true)} className="flex items-center gap-2 bg-rose-400 hover:bg-rose-500 text-white text-sm font-semibold px-8 py-3 rounded-full shadow-md transition-colors">
             <Calendar size={15} />
-            Agendar cita
+            Agendar cita/Cotizar
           </button>
           <div className="flex items-center gap-6">
             <a href="https://www.instagram.com/mon478644" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-gray-400 hover:text-rose-400 transition-colors group">
