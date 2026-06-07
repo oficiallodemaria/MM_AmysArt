@@ -1,6 +1,6 @@
 import { MapPin, Clock, Calendar } from "lucide-react"
 
-const CALENDLY_URL = "https://calendly.com/tu-usuario"
+const CALENDLY_URL = "https://cal.com/mmnailsart"
 
 export default function Info() {
   return (

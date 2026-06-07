@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { ArrowLeft, Calendar, ChevronLeft, ChevronRight, X } from "lucide-react"
 
-const CALENDLY_URL = "https://calendly.com/tu-usuario"
+const CALENDLY_URL = "https://cal.com/mmnailsart"
 
 const fotosMicroblading = [
   "/MM_AmysArt/cejas/1.jpeg",
