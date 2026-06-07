@@ -33,7 +33,7 @@ const servicios = [
 
 export default function Servicios() {
   return (
-    <section id="servicios" className="py-20 bg-gradient-to-b from-white to-rose-50">
+    <section id="servicios" className="py-20 bg-gradient-to-b from-rose-50 to-white">
       <div className="max-w-6xl mx-auto px-4">
 
         <div className="text-center mb-14">
