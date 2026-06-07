@@ -6,7 +6,7 @@ import Promos from "../components/Promos"
 import Info from "../components/Info"
 import Footer from "../components/Footer"
 
-const CALENDLY_URL = "https://calendly.com/tu-usuario"
+const CALENDLY_URL = "https://cal.com/mmnailsart"
 
 export default function Home() {
   return (
