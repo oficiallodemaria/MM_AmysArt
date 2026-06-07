@@ -1,6 +1,6 @@
 import { MapPin, Clock, Calendar } from "lucide-react"
 
-const CALENDLY_URL = "https://cal.com/mmnailsart"
+const CALENDLY_URL = "https://calendly.com/tu-usuario"
 
 export default function Info() {
   return (
@@ -28,13 +28,12 @@ export default function Info() {
               <span className="ml-auto text-amber-300 text-sm">✦</span>
             </div>
             <div className="p-6">
-              <p className="text-sm text-gray-600 mb-1 leading-relaxed">Priv. Citlalli 426, Cesteros</p>
-              <p className="text-sm text-gray-600 mb-1">56366 Chimalhuacán, Méx.</p>
-              <p className="text-xs text-amber-500 italic mb-4">(Cerca de Equipo Táctico)</p>
+              <p className="text-sm text-gray-600 mb-1 leading-relaxed">C. Izquitl Manzana 024 Lote 8, Pescadores</p>
+              <p className="text-sm text-gray-600 mb-4">56334 Chimalhuacán, Méx.</p>
               <div className="w-full rounded-2xl overflow-hidden mb-4 shadow-sm ring-1 ring-amber-100">
-                <iframe title="Ubicación Lo de María" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.32706756388!2d-98.96069029036138!3d19.441460440324345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e387fb33b28d%3A0x168e8f6d317e4408!2sPriv.%20Citlalli%20426%2C%20Cesteros%2C%2056366%20Chimalhuac%C3%A1n%2C%20M%C3%A9x.!5e0!3m2!1ses!2smx!4v1779941196011!5m2!1ses!2smx" width="100%" height="180" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+                <iframe title="Ubicación MM Nails Art" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.327805549356!2d-98.9581101!3d19.4414286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e3f7a05ed96d%3A0x43a6ea01336a2765!2sMM%20Nails%20Art!5e0!3m2!1ses-419!2smx!4v1780809654863!5m2!1ses-419!2smx" width="100%" height="180" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
               </div>
-              <a href="https://maps.google.com/?q=Priv.+Citlalli+426,+Cesteros,+56366+Chimalhuacán,+Méx." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-sm border border-amber-300 text-amber-500 rounded-full px-4 py-2 hover:bg-amber-400 hover:text-white hover:border-amber-400 transition-all duration-300 w-full">
+              <a href="https://maps.google.com/?q=C.+Izquitl+Manzana+024+Lote+8,+Pescadores,+56334+Chimalhuacán,+Méx." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-sm border border-amber-300 text-amber-500 rounded-full px-4 py-2 hover:bg-amber-400 hover:text-white hover:border-amber-400 transition-all duration-300 w-full">
                 <MapPin size={14} />
                 Cómo llegar
               </a>
@@ -66,9 +65,8 @@ export default function Info() {
                   <span className="text-sm font-semibold text-rose-400">Cerrado</span>
                 </div>
               </div>
-
               <div className="rounded-2xl overflow-hidden ring-1 ring-amber-100 shadow-md">
-                <img src="/MM_AmysArt/negocio.jpeg" alt="MM Nails Art" className="w-full h-48 object-cover" />
+                <img src="/MM_AmysArt/negocio.jpg" alt="MM Nails Art" className="w-full h-48 object-cover" />
               </div>
             </div>
           </div>
