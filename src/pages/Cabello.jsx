@@ -1,8 +1,9 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { ArrowLeft, Calendar, ChevronLeft, ChevronRight, X, Play } from "lucide-react"
+import ModalCita from "../components/ModalCita"
 
-const CALENDLY_URL = "https://cal.com/mmnailsart"
+const [modalAbierto, setModalAbierto] = useState(false)
 
 const videosAlisados = [
   "/MM_AmysArt/cabello/alisado1.mp4",
@@ -159,15 +160,16 @@ export default function Cabello() {
             <span className="text-amber-400 text-sm">✦</span>
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400" />
           </div>
-          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-rose-400 hover:bg-rose-500 text-white font-semibold px-10 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105">
+          <button onClick={() => setModalAbierto(true)} className="inline-flex items-center gap-2 bg-rose-400 hover:bg-rose-500 text-white font-semibold px-10 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105">
             <Calendar size={16} />
-            Agendar cita
-          </a>
+              Agendar cita
+          </button>
         </div>
 
       </div>
 
       <ModalVideo src={videoActivo} onCerrar={() => setVideoActivo(null)} />
+      <ModalCita abierto={modalAbierto} onCerrar={() => setModalAbierto(false)} />
     </div>
   )
 }

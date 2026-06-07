@@ -1,8 +1,9 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { ArrowLeft, Calendar, ChevronLeft, ChevronRight, X, Play } from "lucide-react"
+import ModalCita from "../components/ModalCita"
 
-const CALENDLY_URL = "https://cal.com/mmnailsart"
+const [modalAbierto, setModalAbierto] = useState(false)
 
 const servicios = [
   { nombre: "Esculturales", desc: "Uñas de acrílico modeladas a mano, con la forma y longitud que desees.", icono: "/MM_AmysArt/iconos/unas.png" },
@@ -123,10 +124,10 @@ export default function Unas() {
             <span className="text-amber-400 text-sm">✦</span>
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400" />
           </div>
-          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-rose-400 hover:bg-rose-500 text-white font-semibold px-10 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105">
-            <Calendar size={16} />
-            Agendar cita
-          </a>
+          <button onClick={() => setModalAbierto(true)} className="inline-flex items-center gap-2 bg-rose-400 hover:bg-rose-500 text-white font-semibold px-10 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105">
+           <Calendar size={16} />
+             Agendar cita
+          </button>
         </div>
 
       </div>
@@ -153,7 +154,7 @@ export default function Unas() {
           <video src={videoActivo} className="max-h-[85vh] max-w-[90vw] rounded-3xl shadow-2xl ring-2 ring-amber-400/30" controls autoPlay onClick={(e) => e.stopPropagation()} />
         </div>
       )}
-
+      <ModalCita abierto={modalAbierto} onCerrar={() => setModalAbierto(false)} />
     </div>
   )
 }

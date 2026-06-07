@@ -1,8 +1,9 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { ArrowLeft, Calendar, ChevronLeft, ChevronRight, X } from "lucide-react"
+import ModalCita from "../components/ModalCita"
 
-const CALENDLY_URL = "https://cal.com/mmnailsart"
+const [modalAbierto, setModalAbierto] = useState(false)
 
 const fotosMicroblading = [
   "/MM_AmysArt/cejas/1.jpeg",
@@ -136,16 +137,17 @@ export default function Cejas() {
             <span className="text-amber-400 text-sm">✦</span>
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400" />
           </div>
-          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-rose-400 hover:bg-rose-500 text-white font-semibold px-10 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105">
-            <Calendar size={16} />
-            Agendar cita
-          </a>
+          <button onClick={() => setModalAbierto(true)} className="inline-flex items-center gap-2 bg-rose-400 hover:bg-rose-500 text-white font-semibold px-10 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105">
+           <Calendar size={16} />
+             Agendar cita
+          </button>
         </div>
 
       </div>
 
       <ModalFoto fotos={fotosMicroblading} seleccionada={fotoMicroblading} onCerrar={() => setFotoMicroblading(null)} onAnterior={() => setFotoMicroblading((p) => Math.max(p - 1, 0))} onSiguiente={() => setFotoMicroblading((p) => Math.min(p + 1, fotosMicroblading.length - 1))} />
       <ModalFoto fotos={fotosMicroshading} seleccionada={fotoMicroshading} onCerrar={() => setFotoMicroshading(null)} onAnterior={() => setFotoMicroshading((p) => Math.max(p - 1, 0))} onSiguiente={() => setFotoMicroshading((p) => Math.min(p + 1, fotosMicroshading.length - 1))} />
+      <ModalCita abierto={modalAbierto} onCerrar={() => setModalAbierto(false)} />
     </div>
   )
 }
