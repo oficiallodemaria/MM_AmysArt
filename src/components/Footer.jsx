@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="bg-white border-t border-rose-100 py-10">
+      <footer id="contacto" className="bg-white border-t border-rose-100 py-10">
         <div className="max-w-lg mx-auto px-4 flex flex-col items-center gap-6">
           <img src="/MM_AmysArt/logo.png" alt="MM Nails Art" className="h-20 w-auto object-contain" />
           <button onClick={() => setModalAbierto(true)} className="flex items-center gap-2 bg-rose-400 hover:bg-rose-500 text-white text-sm font-semibold px-8 py-3 rounded-full shadow-md transition-colors">

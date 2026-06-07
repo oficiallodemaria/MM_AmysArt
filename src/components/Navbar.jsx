@@ -10,6 +10,7 @@ const links = [
   { nombre: "Promos", id: "promos" },
   { nombre: "Ubicación", id: "ubicacion" },
   { nombre: "Horarios", id: "horarios" },
+  { nombre: "Contacto", id: "contacto" },
 ]
 
 export default function Navbar() {
