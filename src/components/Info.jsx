@@ -34,7 +34,7 @@ export default function Info() {
               <div className="w-full rounded-2xl overflow-hidden mb-4 shadow-sm ring-1 ring-amber-100">
                 <iframe title="Ubicación MM Nails Art" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.327805549356!2d-98.9581101!3d19.4414286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e3f7a05ed96d%3A0x43a6ea01336a2765!2sMM%20Nails%20Art!5e0!3m2!1ses-419!2smx!4v1780809654863!5m2!1ses-419!2smx" width="100%" height="180" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
               </div>
-              <a href="https://maps.google.com/?q=C.+Izquitl+Manzana+024+Lote+8,+Pescadores,+56334+Chimalhuacán,+Méx." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-sm border border-amber-300 text-amber-500 rounded-full px-4 py-2 hover:bg-amber-400 hover:text-white hover:border-amber-400 transition-all duration-300 w-full">
+              <a href="https://www.google.com/maps?q=19.4414286,-98.9581101" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-sm border border-amber-300 text-amber-500 rounded-full px-4 py-2 hover:bg-amber-400 hover:text-white hover:border-amber-400 transition-all duration-300 w-full">
                 <MapPin size={14} />
                 Cómo llegar
               </a>
