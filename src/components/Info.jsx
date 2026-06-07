@@ -67,18 +67,8 @@ export default function Info() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-rose-50 to-amber-50 border border-amber-200 rounded-2xl p-5 text-center">
-                <div className="flex items-center justify-center gap-2 mb-2">
-                  <span className="text-amber-400 text-xs">✦</span>
-                  <Calendar size={16} className="text-rose-400" />
-                  <span className="text-amber-400 text-xs">✦</span>
-                </div>
-                <p style={{ fontFamily: "'Playfair Display', serif" }} className="text-lg italic text-rose-400 mb-1">Atención con cita previa</p>
-                <p className="text-xs text-gray-500 mb-4">¡Agenda tu cita y asegura tu lugar!</p>
-                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-rose-400 hover:bg-rose-500 text-white text-sm font-semibold px-6 py-2.5 rounded-full shadow-md transition-all duration-300 hover:scale-105">
-                  <Calendar size={14} />
-                  Agendar ahora
-                </a>
+              <div className="rounded-2xl overflow-hidden ring-1 ring-amber-100 shadow-md">
+                <img src="/MM_AmysArt/negocio.jpeg" alt="MM Nails Art" className="w-full h-48 object-cover" />
               </div>
             </div>
           </div>
