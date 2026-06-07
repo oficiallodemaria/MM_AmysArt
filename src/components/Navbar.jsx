@@ -1,12 +1,34 @@
 import { useState } from "react"
 import { Calendar, Menu, X } from "lucide-react"
 import ModalCita from "./ModalCita"
+import { useNavigate, useLocation } from "react-router-dom"
 
-const links = ["Inicio","Servicios","Trabajos","Promos","Ubicación","Horarios","Contacto"]
+const links = [
+  { nombre: "Inicio", id: "inicio" },
+  { nombre: "Servicios", id: "servicios" },
+  { nombre: "Trabajos", id: "trabajos" },
+  { nombre: "Promos", id: "promos" },
+  { nombre: "Ubicación", id: "ubicacion" },
+  { nombre: "Horarios", id: "horarios" },
+]
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [modalAbierto, setModalAbierto] = useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const handleLink = (id) => {
+    setOpen(false)
+    if (location.pathname !== "/") {
+      navigate("/")
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+      }, 300)
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+    }
+  }
 
   return (
     <>
@@ -17,7 +39,9 @@ export default function Navbar() {
           </div>
           <ul className="hidden md:flex items-center gap-6">
             {links.map(l => (
-              <li key={l}><a href={`#${l.toLowerCase().replace("ó","o").replace("ú","u")}`} className="text-sm text-gray-600 hover:text-rose-400 transition-colors">{l}</a></li>
+              <li key={l.id}>
+                <button onClick={() => handleLink(l.id)} className="text-sm text-gray-600 hover:text-rose-400 transition-colors">{l.nombre}</button>
+              </li>
             ))}
           </ul>
           <button onClick={() => setModalAbierto(true)} className="hidden md:flex items-center gap-2 bg-rose-400 hover:bg-rose-500 text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors">
@@ -30,13 +54,13 @@ export default function Navbar() {
         </div>
 
         {open && (
-          <div className="md:hidden bg-white border-t border-rose-100 px-4 py-4 flex flex-col gap-3">
+          <div className="md:hidden bg-rose-50 border-t border-rose-100 px-4 py-4 flex flex-col gap-3">
             {links.map(l => (
-              <a key={l} href={`#${l.toLowerCase().replace("ó","o").replace("ú","u")}`} className="text-sm text-gray-600 hover:text-rose-400" onClick={() => setOpen(false)}>{l}</a>
+              <button key={l.id} onClick={() => handleLink(l.id)} className="text-sm text-gray-600 hover:text-rose-400 text-left">{l.nombre}</button>
             ))}
             <button onClick={() => { setModalAbierto(true); setOpen(false) }} className="flex items-center justify-center gap-2 bg-rose-400 text-white text-sm font-semibold px-4 py-2 rounded-full mt-2">
               <Calendar size={15} />
-              Agendar cita/Cotizar
+              Agendar cita
             </button>
           </div>
         )}
