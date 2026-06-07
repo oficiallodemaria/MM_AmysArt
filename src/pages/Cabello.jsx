@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom"
 import { ArrowLeft, Calendar, ChevronLeft, ChevronRight, X, Play } from "lucide-react"
 import ModalCita from "../components/ModalCita"
 
-const [modalAbierto, setModalAbierto] = useState(false)
-
 const videosAlisados = [
   "/MM_AmysArt/cabello/alisado1.mp4",
   "/MM_AmysArt/cabello/alisado2.mp4",
@@ -64,6 +62,7 @@ function SeccionTitulo({ subtitulo, titulo }) {
 }
 
 export default function Cabello() {
+  const [modalAbierto, setModalAbierto] = useState(false)
   const navigate = useNavigate()
   const [videoActivo, setVideoActivo] = useState(null)
 

@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom"
 import { ArrowLeft, Calendar, ChevronLeft, ChevronRight, X } from "lucide-react"
 import ModalCita from "../components/ModalCita"
 
-const [modalAbierto, setModalAbierto] = useState(false)
-
 const fotosMicroblading = [
   "/MM_AmysArt/cejas/1.jpeg",
 ]
@@ -68,6 +66,7 @@ function SeccionTitulo({ subtitulo, titulo }) {
 }
 
 export default function Cejas() {
+  const [modalAbierto, setModalAbierto] = useState(false)
   const navigate = useNavigate()
   const [fotoMicroblading, setFotoMicroblading] = useState(null)
   const [fotoMicroshading, setFotoMicroshading] = useState(null)

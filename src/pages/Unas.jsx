@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom"
 import { ArrowLeft, Calendar, ChevronLeft, ChevronRight, X, Play } from "lucide-react"
 import ModalCita from "../components/ModalCita"
 
-const [modalAbierto, setModalAbierto] = useState(false)
-
 const servicios = [
   { nombre: "Esculturales", desc: "Uñas de acrílico modeladas a mano, con la forma y longitud que desees.", icono: "/MM_AmysArt/iconos/unas.png" },
   { nombre: "Poligel", desc: "Resistentes y ligeras, perfectas para quienes buscan durabilidad y belleza.", icono: "/MM_AmysArt/iconos/unas.png" },
@@ -36,6 +34,7 @@ const videos = [
 ]
 
 export default function Unas() {
+  const [modalAbierto, setModalAbierto] = useState(false)
   const navigate = useNavigate()
   const [seleccionada, setSeleccionada] = useState(null)
   const [videoActivo, setVideoActivo] = useState(null)

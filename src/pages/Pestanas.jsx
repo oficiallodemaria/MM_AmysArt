@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom"
 import { ArrowLeft, Calendar, ChevronLeft, ChevronRight, X, Play } from "lucide-react"
 import ModalCita from "../components/ModalCita"
 
-const [modalAbierto, setModalAbierto] = useState(false)
-
 const servicios = [
   { nombre: "Clásica", desc: "Una extensión por pestaña natural, resultado natural y elegante.", icono: "/MM_AmysArt/iconos/pestanas.png" },
   { nombre: "Efecto rimel", desc: "Volumen y densidad para una mirada dramática sin usar rimel.", icono: "/MM_AmysArt/iconos/pestanas.png" },
@@ -26,6 +24,7 @@ const videos = [
 ]
 
 export default function Pestanas() {
+  const [modalAbierto, setModalAbierto] = useState(false)
   const navigate = useNavigate()
   const [seleccionada, setSeleccionada] = useState(null)
   const [videoActivo, setVideoActivo] = useState(null)
