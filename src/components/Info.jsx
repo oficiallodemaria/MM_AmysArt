@@ -66,7 +66,7 @@ export default function Info() {
                 </div>
               </div>
               <div className="rounded-2xl overflow-hidden ring-1 ring-amber-100 shadow-md">
-                <img src="/MM_AmysArt/negocio.jpg" alt="MM Nails Art" className="w-full h-48 object-cover" />
+                <img src="/MM_AmysArt/negocio.jpeg" alt="MM Nails Art" className="w-full h-48 object-cover" />
               </div>
             </div>
           </div>
