@@ -7,7 +7,7 @@ const links = [
   { nombre: "Inicio", id: "inicio" },
   { nombre: "Servicios", id: "servicios" },
   { nombre: "Trabajos", id: "trabajos" },
-  { nombre: "Promos", id: "promos" },
+  { nombre: "Precios y Promos", id: "promos" },
   { nombre: "Ubicación", id: "ubicacion" },
   { nombre: "Horarios", id: "horarios" },
   { nombre: "Contacto", id: "contacto" },
