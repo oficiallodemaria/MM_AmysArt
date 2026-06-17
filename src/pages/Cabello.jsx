@@ -8,8 +8,24 @@ const videosAlisados = [
   "/MM_AmysArt/cabello/alisado2.mp4",
   "/MM_AmysArt/cabello/alisado3.mp4",
   "/MM_AmysArt/cabello/alisado4.mp4",
-  "/MM_AmysArt/cabello/alisado5.mp4",
+  "/MM_AmysArt/cabello/alisado5.mp4"
 ]
+
+const fotosAlisados = [
+  "/MM_AmysArt/cabello/alisado6.jpeg"
+]
+
+function Galeria({ fotos, onSeleccionar }) {
+  return (
+    <div className="grid grid-cols-3 md:grid-cols-5 gap-3">
+      {fotos.map((src, i) => (
+        <div key={i} onClick={() => onSeleccionar(i)} className="aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 group ring-1 ring-amber-100">
+          <img src={src} alt={`foto ${i + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+        </div>
+      ))}
+    </div>
+  )
+}
 
 function GaleriaVideos({ videos, onSeleccionar }) {
   return (
@@ -65,6 +81,7 @@ export default function Cabello() {
   const [modalAbierto, setModalAbierto] = useState(false)
   const navigate = useNavigate()
   const [videoActivo, setVideoActivo] = useState(null)
+  const [fotoAlisados, setFotoAlisados] = useState(null)
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white">
@@ -89,7 +106,7 @@ export default function Cabello() {
           </div>
 
           <SeccionTitulo subtitulo="Portafolio" titulo="Fotos" />
-          <Proximamente tipo="foto" />
+          <div className="mb-8"><Galeria fotos={fotosAlisados} onSeleccionar={setFotoAlisados} /></div>
 
           <SeccionTitulo subtitulo="En movimiento" titulo="Videos" />
           <GaleriaVideos videos={videosAlisados} onSeleccionar={setVideoActivo} />
@@ -169,6 +186,15 @@ export default function Cabello() {
 
       <ModalVideo src={videoActivo} onCerrar={() => setVideoActivo(null)} />
       <ModalCita abierto={modalAbierto} onCerrar={() => setModalAbierto(false)} />
+
+      {fotoAlisados !== null && (
+        <div className="fixed inset-0 bg-black/85 z-50 flex items-center justify-center p-4 backdrop-blur-sm" onClick={() => setFotoAlisados(null)}>
+          <button className="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-700 hover:text-rose-400 transition-colors shadow-lg"><X size={20} /></button>
+          <button onClick={(e) => { e.stopPropagation(); setFotoAlisados((p) => Math.max(p - 1, 0)) }} disabled={fotoAlisados === 0} className="absolute left-4 w-10 h-10 bg-white rounded-full flex items-center justify-center text-amber-500 hover:text-rose-400 transition-colors shadow-lg disabled:opacity-30"><ChevronLeft size={20} /></button>
+          <img src={fotosAlisados[fotoAlisados]} alt={`foto ${fotoAlisados + 1}`} className="max-h-[85vh] max-w-[90vw] rounded-3xl object-contain shadow-2xl ring-2 ring-amber-400/30" onClick={(e) => e.stopPropagation()} />
+          <button onClick={(e) => { e.stopPropagation(); setFotoAlisados((p) => Math.min(p + 1, fotosAlisados.length - 1)) }} disabled={fotoAlisados === fotosAlisados.length - 1} className="absolute right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center text-amber-500 hover:text-rose-400 transition-colors shadow-lg disabled:opacity-30"><ChevronRight size={20} /></button>
+        </div>
+      )}
     </div>
   )
 }

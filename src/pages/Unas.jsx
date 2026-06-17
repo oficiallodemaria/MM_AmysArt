@@ -25,6 +25,12 @@ const fotos = [
   "/MM_AmysArt/unas/13.jpeg",
   "/MM_AmysArt/unas/14.jpeg",
   "/MM_AmysArt/unas/15.jpeg",
+  "/MM_AmysArt/unas/16.jpeg",
+  "/MM_AmysArt/unas/17.jpeg",
+  "/MM_AmysArt/unas/18.jpeg",
+  "/MM_AmysArt/unas/19.jpeg",
+  "/MM_AmysArt/unas/20.jpeg",
+  "/MM_AmysArt/unas/21.jpeg"
 ]
 
 const videos = [
