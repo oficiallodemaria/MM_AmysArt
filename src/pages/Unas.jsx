@@ -30,8 +30,7 @@ const fotos = [
   "/MM_AmysArt/unas/18.jpeg",
   "/MM_AmysArt/unas/19.jpeg",
   "/MM_AmysArt/unas/20.jpeg",
-  "/MM_AmysArt/unas/21.jpeg",
-  "/MM_AmysArt/unas/22.jpeg"
+  "/MM_AmysArt/unas/21.jpeg"
 ]
 
 const videos = [
