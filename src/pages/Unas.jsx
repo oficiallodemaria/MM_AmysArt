@@ -30,13 +30,15 @@ const fotos = [
   "/MM_AmysArt/unas/18.jpeg",
   "/MM_AmysArt/unas/19.jpeg",
   "/MM_AmysArt/unas/20.jpeg",
-  "/MM_AmysArt/unas/21.jpeg"
+  "/MM_AmysArt/unas/21.jpeg",
+  "/MM_AmysArt/unas/22.jpeg"
 ]
 
 const videos = [
   "/MM_AmysArt/unas/unas1.mp4",
   "/MM_AmysArt/unas/unas2.mp4",
   "/MM_AmysArt/unas/unas3.mp4",
+  "/MM_AmysArt/unas/unas4.mp4",
 ]
 
 export default function Unas() {
