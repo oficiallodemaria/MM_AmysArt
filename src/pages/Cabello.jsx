@@ -105,6 +105,18 @@ export default function Cabello() {
             <p className="text-gray-500 mt-4 text-sm">Cabello liso, suave y brillante</p>
           </div>
 
+          <SeccionTitulo subtitulo="Lista de precios" titulo="Precios" />
+          <div className="max-w-md mx-auto mb-8">
+            <div onClick={() => setVideoActivo("/MM_AmysArt/cabello/precios-alisados.mp4")} className="relative aspect-video bg-rose-100 rounded-3xl overflow-hidden cursor-pointer group shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 ring-1 ring-amber-100">
+              <video src="/MM_AmysArt/cabello/precios-alisados.mp4" className="w-full h-full object-cover" muted />
+              <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition-colors">
+                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg ring-2 ring-amber-300">
+                  <Play size={22} className="text-rose-400 ml-1" />
+                </div>
+              </div>
+            </div>
+          </div>
+
           <SeccionTitulo subtitulo="Portafolio" titulo="Fotos" />
           <div className="mb-8"><Galeria fotos={fotosAlisados} onSeleccionar={setFotoAlisados} /></div>
 
