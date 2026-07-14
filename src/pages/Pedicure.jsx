@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { ArrowLeft, Calendar, ChevronLeft, ChevronRight, X, Play } from "lucide-react"
+import { ArrowLeft, Calendar, X, Play } from "lucide-react"
 import ModalCita from "../components/ModalCita"
 
 const servicios = [
@@ -13,11 +13,18 @@ const fotos = [
 
 ]
 
+const foto = "/MM_AmysArt/pedicure/1.jpeg"
+
+const videos = [
+  "/MM_AmysArt/pedicure/pedicure1.mp4",
+  "/MM_AmysArt/pedicure/pedicure2.mp4",
+  "/MM_AmysArt/pedicure/pedicure3.mp4",
+]
 
 export default function Pedicure() {
   const [modalAbierto, setModalAbierto] = useState(false)
   const navigate = useNavigate()
-  const [seleccionada, setSeleccionada] = useState(null)
+  const [fotoAbierta, setFotoAbierta] = useState(false)
   const [videoActivo, setVideoActivo] = useState(null)
 
   return (
@@ -30,14 +37,14 @@ export default function Pedicure() {
         </button>
 
         <div className="text-center mb-14">
-          <p className="text-xs tracking-[0.3em] text-amber-500 uppercase font-semibold mb-3">Cuidado y belleza para tus pies</p>
+          <p className="text-xs tracking-[0.3em] text-amber-500 uppercase font-semibold mb-3">Cuidado que se nota</p>
           <h1 style={{ fontFamily: "'Playfair Display', serif" }} className="text-6xl text-gray-800 mb-4 italic">Pedicure</h1>
           <div className="flex items-center justify-center gap-3">
             <div className="h-px w-16 bg-gradient-to-r from-transparent to-amber-400" />
             <span className="text-rose-400 text-lg">♥</span>
             <div className="h-px w-16 bg-gradient-to-l from-transparent to-amber-400" />
           </div>
-          <p className="text-gray-500 mt-4 text-sm">Tratamientos profesionales para lucir unos pies impecables</p>
+          <p className="text-gray-500 mt-4 text-sm">Pies suaves, sanos y hermosos</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-16">
@@ -59,7 +66,7 @@ export default function Pedicure() {
 
         <div className="text-center mb-10">
           <p className="text-xs tracking-[0.3em] text-amber-500 uppercase font-semibold mb-2">Portafolio</p>
-          <h2 style={{ fontFamily: "'Playfair Display', serif" }} className="text-4xl text-gray-800 italic mb-4">Galería de Fotos</h2>
+          <h2 style={{ fontFamily: "'Playfair Display', serif" }} className="text-4xl text-gray-800 italic mb-4">Foto</h2>
           <div className="flex items-center justify-center gap-3">
             <div className="h-px w-12 bg-gradient-to-r from-transparent to-amber-400" />
             <span className="text-rose-400">♥</span>
@@ -67,12 +74,10 @@ export default function Pedicure() {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 md:grid-cols-5 gap-3 mb-16">
-          {fotos.map((src, i) => (
-            <div key={i} onClick={() => setSeleccionada(i)} className="aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 group ring-1 ring-amber-100">
-              <img src={src} alt={`Pedicure ${i + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-            </div>
-          ))}
+        <div className="flex justify-center mb-16">
+          <div onClick={() => setFotoAbierta(true)} className="w-64 h-64 rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 group ring-1 ring-amber-100">
+            <img src={foto} alt="Pedicure" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+          </div>
         </div>
 
         <div className="text-center mb-10">
@@ -112,19 +117,10 @@ export default function Pedicure() {
 
       </div>
 
-      {seleccionada !== null && (
-        <div className="fixed inset-0 bg-black/85 z-50 flex items-center justify-center p-4 backdrop-blur-sm" onClick={() => setSeleccionada(null)}>
+      {fotoAbierta && (
+        <div className="fixed inset-0 bg-black/85 z-50 flex items-center justify-center p-4 backdrop-blur-sm" onClick={() => setFotoAbierta(false)}>
           <button className="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-700 hover:text-rose-400 transition-colors shadow-lg"><X size={20} /></button>
-          <button onClick={(e) => { e.stopPropagation(); setSeleccionada((p) => Math.max(p - 1, 0)) }} disabled={seleccionada === 0} className="absolute left-4 w-10 h-10 bg-white rounded-full flex items-center justify-center text-amber-500 hover:text-rose-400 transition-colors shadow-lg disabled:opacity-30"><ChevronLeft size={20} /></button>
-          <div className="relative">
-            <img src={fotos[seleccionada]} alt={`Pedicure ${seleccionada + 1}`} className="max-h-[85vh] max-w-[90vw] rounded-3xl object-contain shadow-2xl ring-2 ring-amber-400/30" onClick={(e) => e.stopPropagation()} />
-            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2">
-              <span className="text-amber-400 text-xs">✦</span>
-              <p style={{ fontFamily: "'Playfair Display', serif" }} className="text-white/60 text-xs italic">{seleccionada + 1} de {fotos.length}</p>
-              <span className="text-amber-400 text-xs">✦</span>
-            </div>
-          </div>
-          <button onClick={(e) => { e.stopPropagation(); setSeleccionada((p) => Math.min(p + 1, fotos.length - 1)) }} disabled={seleccionada === fotos.length - 1} className="absolute right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center text-amber-500 hover:text-rose-400 transition-colors shadow-lg disabled:opacity-30"><ChevronRight size={20} /></button>
+          <img src={foto} alt="Pedicure" className="max-h-[85vh] max-w-[90vw] rounded-3xl object-contain shadow-2xl ring-2 ring-amber-400/30" onClick={(e) => e.stopPropagation()} />
         </div>
       )}
 
