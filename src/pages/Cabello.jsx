@@ -10,7 +10,8 @@ const videosAlisados = [
   "/MM_AmysArt/cabello/alisado4.mp4",
   "/MM_AmysArt/cabello/alisado5.mp4",
   "/MM_AmysArt/cabello/alisado6.mp4",
-  "/MM_AmysArt/cabello/alisado7.mp4"
+  "/MM_AmysArt/cabello/alisado7.mp4",
+  "/MM_AmysArt/cabello/alisado8.mp4"
 
 
 ]
