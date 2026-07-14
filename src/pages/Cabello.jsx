@@ -11,14 +11,18 @@ const videosAlisados = [
   "/MM_AmysArt/cabello/alisado5.mp4",
   "/MM_AmysArt/cabello/alisado6.mp4",
   "/MM_AmysArt/cabello/alisado7.mp4",
-  "/MM_AmysArt/cabello/alisado8.mp4"
-
-
+  "/MM_AmysArt/cabello/alisado8.mp4",
 ]
 
 const fotosAlisados = [
-  "/MM_AmysArt/cabello/alisado6.jpeg"
+  "/MM_AmysArt/cabello/alisado6.jpeg",
 ]
+
+const fotosExtensiones = [
+  "/MM_AmysArt/cabello/exten1.jpeg",
+]
+
+const videoExtensiones = "/MM_AmysArt/cabello/extenv1.mp4"
 
 function Galeria({ fotos, onSeleccionar }) {
   return (
@@ -87,6 +91,7 @@ export default function Cabello() {
   const navigate = useNavigate()
   const [videoActivo, setVideoActivo] = useState(null)
   const [fotoAlisados, setFotoAlisados] = useState(null)
+  const [fotoExtensiones, setFotoExtensiones] = useState(null)
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white">
@@ -177,14 +182,20 @@ export default function Cabello() {
             </div>
           </div>
 
-          <SeccionTitulo subtitulo="Portafolio" titulo="Cabello humano — Fotos" />
-          <Proximamente tipo="foto" />
-
-          <SeccionTitulo subtitulo="Portafolio" titulo="Cabello clon humano — Fotos" />
-          <Proximamente tipo="foto" />
+          <SeccionTitulo subtitulo="Portafolio" titulo="Galería de Fotos" />
+          <div className="mb-8"><Galeria fotos={fotosExtensiones} onSeleccionar={setFotoExtensiones} /></div>
 
           <SeccionTitulo subtitulo="En movimiento" titulo="Videos" />
-          <Proximamente tipo="video" />
+          <div className="max-w-md mx-auto mb-8">
+            <div onClick={() => setVideoActivo(videoExtensiones)} className="relative aspect-video bg-rose-100 rounded-3xl overflow-hidden cursor-pointer group shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 ring-1 ring-amber-100">
+              <video src={videoExtensiones} className="w-full h-full object-cover" muted />
+              <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition-colors">
+                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg ring-2 ring-amber-300">
+                  <Play size={22} className="text-rose-400 ml-1" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="text-center mt-12">
@@ -195,7 +206,7 @@ export default function Cabello() {
           </div>
           <button onClick={() => setModalAbierto(true)} className="inline-flex items-center gap-2 bg-rose-400 hover:bg-rose-500 text-white font-semibold px-10 py-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105">
             <Calendar size={16} />
-              Agendar cita/Cotizar
+            Agendar cita/Cotizar
           </button>
         </div>
 
@@ -212,6 +223,16 @@ export default function Cabello() {
           <button onClick={(e) => { e.stopPropagation(); setFotoAlisados((p) => Math.min(p + 1, fotosAlisados.length - 1)) }} disabled={fotoAlisados === fotosAlisados.length - 1} className="absolute right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center text-amber-500 hover:text-rose-400 transition-colors shadow-lg disabled:opacity-30"><ChevronRight size={20} /></button>
         </div>
       )}
+
+      {fotoExtensiones !== null && (
+        <div className="fixed inset-0 bg-black/85 z-50 flex items-center justify-center p-4 backdrop-blur-sm" onClick={() => setFotoExtensiones(null)}>
+          <button className="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-700 hover:text-rose-400 transition-colors shadow-lg"><X size={20} /></button>
+          <button onClick={(e) => { e.stopPropagation(); setFotoExtensiones((p) => Math.max(p - 1, 0)) }} disabled={fotoExtensiones === 0} className="absolute left-4 w-10 h-10 bg-white rounded-full flex items-center justify-center text-amber-500 hover:text-rose-400 transition-colors shadow-lg disabled:opacity-30"><ChevronLeft size={20} /></button>
+          <img src={fotosExtensiones[fotoExtensiones]} alt={`foto ${fotoExtensiones + 1}`} className="max-h-[85vh] max-w-[90vw] rounded-3xl object-contain shadow-2xl ring-2 ring-amber-400/30" onClick={(e) => e.stopPropagation()} />
+          <button onClick={(e) => { e.stopPropagation(); setFotoExtensiones((p) => Math.min(p + 1, fotosExtensiones.length - 1)) }} disabled={fotoExtensiones === fotosExtensiones.length - 1} className="absolute right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center text-amber-500 hover:text-rose-400 transition-colors shadow-lg disabled:opacity-30"><ChevronRight size={20} /></button>
+        </div>
+      )}
+
     </div>
   )
 }

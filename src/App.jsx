@@ -14,6 +14,7 @@ export default function App() {
         <Route path="/pestanas" element={<Pestanas />} />
         <Route path="/cabello" element={<Cabello />} />
         <Route path="/cejas" element={<Cejas />} />
+        <Route path="/pedicure" element={<Pedicure />} />
       </Routes>
     </BrowserRouter>
   )

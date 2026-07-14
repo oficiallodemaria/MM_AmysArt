@@ -29,6 +29,13 @@ const servicios = [
     imagen: "/MM_AmysArt/servicios/cabello.jpeg",
     ruta: "/cabello",
   },
+  {
+    titulo: "Pedicure",
+    subtitulo: "Pies perfectos",
+    items: ["Pedicure con gel"],
+    imagen: "/MM_AmysArt/servicios/pedicure.jpeg",
+    ruta: "/pedicure",
+  },
 ]
 
 export default function Servicios() {
