@@ -13,13 +13,6 @@ const fotos = [
 
 ]
 
-const foto = "/MM_AmysArt/pedicure/1.jpeg"
-
-const videos = [
-  "/MM_AmysArt/pedicure/pedicure1.mp4",
-  "/MM_AmysArt/pedicure/pedicure2.mp4",
-  "/MM_AmysArt/pedicure/pedicure3.mp4",
-]
 
 export default function Pedicure() {
   const [modalAbierto, setModalAbierto] = useState(false)
