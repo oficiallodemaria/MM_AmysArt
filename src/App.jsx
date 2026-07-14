@@ -4,6 +4,7 @@ import Unas from "./pages/Unas"
 import Pestanas from "./pages/Pestanas"
 import Cabello from "./pages/Cabello"
 import Cejas from "./pages/Cejas"
+import Pedicure from "./pages/Pedicure"
 
 export default function App() {
   return (
