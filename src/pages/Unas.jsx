@@ -43,6 +43,16 @@ const fotos = [
   "/MM_AmysArt/unas/31.jpeg",
   "/MM_AmysArt/unas/32.jpeg",
   "/MM_AmysArt/unas/33.jpeg",
+  "/MM_AmysArt/unas/34.jpeg",
+  "/MM_AmysArt/unas/35.jpeg",
+  "/MM_AmysArt/unas/36.jpeg",
+  "/MM_AmysArt/unas/37.jpeg",
+  "/MM_AmysArt/unas/38.jpeg",
+  "/MM_AmysArt/unas/39.jpeg",
+  "/MM_AmysArt/unas/40.jpeg",
+  "/MM_AmysArt/unas/41.jpeg",
+  "/MM_AmysArt/unas/42.jpeg",
+  "/MM_AmysArt/unas/43.jpeg",
 
 ]
 
