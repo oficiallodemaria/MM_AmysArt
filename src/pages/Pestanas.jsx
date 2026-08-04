@@ -17,6 +17,13 @@ const fotos = [
   "/MM_AmysArt/pestanas/6.jpeg",
   "/MM_AmysArt/pestanas/7.jpeg",
   "/MM_AmysArt/pestanas/8.jpeg",
+  "/MM_AmysArt/pestanas/9.jpeg",
+  "/MM_AmysArt/pestanas/10.jpeg",
+  "/MM_AmysArt/pestanas/11.jpeg",
+  "/MM_AmysArt/pestanas/12.jpeg",
+  "/MM_AmysArt/pestanas/13.jpeg",
+  "/MM_AmysArt/pestanas/14.jpeg",
+  "/MM_AmysArt/pestanas/15.jpeg",
 ]
 
 const videos = [
