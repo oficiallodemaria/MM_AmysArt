@@ -26,13 +26,12 @@ export default function Promos() {
           </div>
         </div>
 
-        {/* Imagen destacada antes de la cuadrícula */}
         <div className="relative rounded-3xl overflow-hidden shadow-md ring-2 ring-amber-400 mb-10 max-w-md mx-auto">
           <div className="absolute top-2 right-2 z-10 bg-amber-400 text-white text-[10px] font-bold px-2 py-0.5 rounded-full tracking-wide">✦ PROMO</div>
           <img
             src="/MM_AmysArt/promos/1.jpeg"
             alt="Promoción destacada"
-            className="w-full h-56 object-cover"
+            className="w-full h-auto"
           />
         </div>
 
