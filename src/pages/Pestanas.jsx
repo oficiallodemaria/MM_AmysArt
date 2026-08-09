@@ -6,7 +6,7 @@ import ModalCita from "../components/ModalCita"
 const servicios = [
   { nombre: "Clásica", desc: "Una extensión por pestaña natural, resultado natural y elegante.", icono: "/MM_AmysArt/iconos/pestanas.png" },
   { nombre: "Efecto rimel", desc: "Volumen y densidad para una mirada dramática sin usar rimel.", icono: "/MM_AmysArt/iconos/pestanas.png" },
-  { nombre: "Hawaiana", desc: "Técnica de volumen ligero para una mirada única.", icono: "/MM_AmysArt/iconos/pestanas.png" },
+  { nombre: "Hawaiana", desc: "Técnica de volumen ligero para una mirada única y divertida.", icono: "/MM_AmysArt/iconos/pestanas.png" },
 ]
 
 // Galería original (se queda igual, no se toca)
@@ -45,7 +45,7 @@ const videos = [
   "/MM_AmysArt/pestanas/video1.mp4",
 ]
 
-// NUEVO: video aparte tipo Hawaiana
+// NUEVO: videos aparte tipo Hawaiana (son dos)
 const videosHawaiana = [
   "/MM_AmysArt/pestanas/vh1.mp4",
   "/MM_AmysArt/pestanas/vh2.mp4",
@@ -200,15 +200,17 @@ export default function Pestanas() {
             <div className="h-px w-10 bg-amber-300" />
           </div>
         </div>
-        <div className="max-w-md mx-auto mb-16">
-          <div onClick={() => setVideoActivo(videoHawaiana)} className="relative aspect-video bg-rose-100 rounded-3xl overflow-hidden cursor-pointer group shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 ring-1 ring-amber-100">
-            <video src={videoHawaiana} className="w-full h-full object-cover" muted />
-            <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition-colors">
-              <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg ring-2 ring-amber-300">
-                <Play size={22} className="text-rose-400 ml-1" />
+        <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto mb-16">
+          {videosHawaiana.map((src, i) => (
+            <div key={i} onClick={() => setVideoActivo(src)} className="relative aspect-video bg-rose-100 rounded-3xl overflow-hidden cursor-pointer group shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 ring-1 ring-amber-100">
+              <video src={src} className="w-full h-full object-cover" muted />
+              <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition-colors">
+                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg ring-2 ring-amber-300">
+                  <Play size={22} className="text-rose-400 ml-1" />
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
 
         <div className="text-center">
