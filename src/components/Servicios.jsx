@@ -11,7 +11,7 @@ const servicios = [
   {
     titulo: "Pestañas",
     subtitulo: "Mirada que cautiva",
-    items: ["Clásica", "Efecto rimel"],
+    items: ["Clásica", "Efecto rimel", "Efecto Hawaina"],
     imagen: "/MM_AmysArt/servicios/pestanas.jpeg",
     ruta: "/pestanas",
   },
