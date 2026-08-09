@@ -46,9 +46,9 @@ const videos = [
 ]
 
 // NUEVO: video aparte tipo Hawaiana
-const videoHawaiana = [ 
+const videosHawaiana = [
   "/MM_AmysArt/pestanas/vh1.mp4",
-  "/MM_AmysArt/pestanas/vh2.mp4"
+  "/MM_AmysArt/pestanas/vh2.mp4",
 ]
 
 export default function Pestanas() {
