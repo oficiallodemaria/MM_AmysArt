@@ -53,6 +53,11 @@ const fotos = [
   "/MM_AmysArt/unas/41.jpeg",
   "/MM_AmysArt/unas/42.jpeg",
   "/MM_AmysArt/unas/43.jpeg",
+  "/MM_AmysArt/unas/44.jpeg",
+  "/MM_AmysArt/unas/45.jpeg",
+  "/MM_AmysArt/unas/46.jpeg",
+  "/MM_AmysArt/unas/47.jpeg",
+  "/MM_AmysArt/unas/48.jpeg",
 
 ]
 
@@ -77,6 +82,7 @@ const videos = [
   "/MM_AmysArt/unas/unas18.mp4",
   "/MM_AmysArt/unas/unas19.mp4",
   "/MM_AmysArt/unas/unas20.mp4",
+  "/MM_AmysArt/unas/unas21.mp4",
 ]
 
 export default function Unas() {
