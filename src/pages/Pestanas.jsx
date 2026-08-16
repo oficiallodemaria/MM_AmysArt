@@ -6,7 +6,7 @@ import ModalCita from "../components/ModalCita"
 const servicios = [
   { nombre: "Clásica", desc: "Una extensión por pestaña natural, resultado natural y elegante.", icono: "/MM_AmysArt/iconos/pestanas.png" },
   { nombre: "Efecto rimel", desc: "Volumen y densidad para una mirada dramática sin usar rimel.", icono: "/MM_AmysArt/iconos/pestanas.png" },
-  { nombre: "Hawaiana", desc: "Técnica de volumen ligero para una mirada única y divertida.", icono: "/MM_AmysArt/iconos/pestanas.png" },
+  { nombre: "Efecto Hawaiana", desc: "Técnica de volumen ligero para una mirada única y divertida.", icono: "/MM_AmysArt/iconos/pestanas.png" },
 ]
 
 const fotos = [
