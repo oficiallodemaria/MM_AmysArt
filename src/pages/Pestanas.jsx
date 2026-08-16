@@ -9,7 +9,6 @@ const servicios = [
   { nombre: "Hawaiana", desc: "Técnica de volumen ligero para una mirada única y divertida.", icono: "/MM_AmysArt/iconos/pestanas.png" },
 ]
 
-// Galería original (se queda igual, no se toca)
 const fotos = [
   "/MM_AmysArt/pestanas/1.jpeg",
   "/MM_AmysArt/pestanas/2.jpeg",
@@ -28,27 +27,31 @@ const fotos = [
   "/MM_AmysArt/pestanas/15.jpeg",
 ]
 
-// NUEVO: sección aparte para las fotos tipo Clásica que vas a subir
 const fotosClasicaNuevas = [
   "/MM_AmysArt/pestanas/c1.jpeg",
   "/MM_AmysArt/pestanas/c2.jpeg",
 ]
 
-// NUEVO: sección aparte para las fotos tipo Hawaiana que vas a subir
 const fotosHawaianaNuevas = [
   "/MM_AmysArt/pestanas/h1.jpeg",
   "/MM_AmysArt/pestanas/h2.jpeg",
 ]
 
-// Video original (se queda igual, no se toca)
+const fotosFoxy = [
+  "/MM_AmysArt/pestanas/f1.jpeg",
+]
+
 const videos = [
   "/MM_AmysArt/pestanas/video1.mp4",
 ]
 
-// NUEVO: videos aparte tipo Hawaiana (son dos)
 const videosHawaiana = [
   "/MM_AmysArt/pestanas/vh1.mp4",
   "/MM_AmysArt/pestanas/vh2.mp4",
+]
+
+const videosEfectoAnime = [
+  "/MM_AmysArt/pestanas/va1.mp4",
 ]
 
 export default function Pestanas() {
@@ -62,6 +65,7 @@ export default function Pestanas() {
     original: fotos,
     clasicaNuevas: fotosClasicaNuevas,
     hawaianaNuevas: fotosHawaianaNuevas,
+    foxy: fotosFoxy,
   }
 
   const abrirFoto = (galeria, index) => setSeleccionada({ galeria, index })
@@ -114,7 +118,6 @@ export default function Pestanas() {
           ))}
         </div>
 
-        {/* ===== Galería original (sin tocar) ===== */}
         <div className="text-center mb-10">
           <p className="text-xs tracking-[0.3em] text-amber-500 uppercase font-semibold mb-2">Portafolio</p>
           <h2 style={{ fontFamily: "'Playfair Display', serif" }} className="text-4xl text-gray-800 italic mb-4">Galería de Fotos</h2>
@@ -133,7 +136,6 @@ export default function Pestanas() {
           ))}
         </div>
 
-        {/* ===== NUEVA sección: fotos tipo Clásica ===== */}
         <div className="text-center mb-6">
           <h3 style={{ fontFamily: "'Playfair Display', serif" }} className="text-2xl text-gray-800 italic mb-2">Fotos · Clásica</h3>
           <div className="flex items-center justify-center gap-2">
@@ -150,7 +152,6 @@ export default function Pestanas() {
           ))}
         </div>
 
-        {/* ===== NUEVA sección: fotos tipo Hawaiana ===== */}
         <div className="text-center mb-6">
           <h3 style={{ fontFamily: "'Playfair Display', serif" }} className="text-2xl text-gray-800 italic mb-2">Fotos · Hawaiana</h3>
           <div className="flex items-center justify-center gap-2">
@@ -167,7 +168,22 @@ export default function Pestanas() {
           ))}
         </div>
 
-        {/* ===== Video original (sin tocar) ===== */}
+        <div className="text-center mb-6">
+          <h3 style={{ fontFamily: "'Playfair Display', serif" }} className="text-2xl text-gray-800 italic mb-2">Fotos · Efecto Foxy</h3>
+          <div className="flex items-center justify-center gap-2">
+            <div className="h-px w-10 bg-amber-300" />
+            <span className="text-amber-400 text-xs">✦</span>
+            <div className="h-px w-10 bg-amber-300" />
+          </div>
+        </div>
+        <div className="grid grid-cols-3 gap-3 mb-16">
+          {fotosFoxy.map((src, i) => (
+            <div key={i} onClick={() => abrirFoto("foxy", i)} className="aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 group ring-1 ring-amber-100">
+              <img src={src} alt={`Foxy ${i + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            </div>
+          ))}
+        </div>
+
         <div className="text-center mb-10">
           <p className="text-xs tracking-[0.3em] text-amber-500 uppercase font-semibold mb-2">En movimiento</p>
           <h2 style={{ fontFamily: "'Playfair Display', serif" }} className="text-4xl text-gray-800 italic mb-4">Video</h2>
@@ -191,7 +207,6 @@ export default function Pestanas() {
           ))}
         </div>
 
-        {/* ===== NUEVA sección: video Hawaiana ===== */}
         <div className="text-center mb-6">
           <h3 style={{ fontFamily: "'Playfair Display', serif" }} className="text-2xl text-gray-800 italic mb-2">Video · Hawaiana</h3>
           <div className="flex items-center justify-center gap-2">
@@ -202,6 +217,27 @@ export default function Pestanas() {
         </div>
         <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto mb-16">
           {videosHawaiana.map((src, i) => (
+            <div key={i} onClick={() => setVideoActivo(src)} className="relative aspect-video bg-rose-100 rounded-3xl overflow-hidden cursor-pointer group shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 ring-1 ring-amber-100">
+              <video src={src} className="w-full h-full object-cover" muted />
+              <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition-colors">
+                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg ring-2 ring-amber-300">
+                  <Play size={22} className="text-rose-400 ml-1" />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mb-6">
+          <h3 style={{ fontFamily: "'Playfair Display', serif" }} className="text-2xl text-gray-800 italic mb-2">Efecto video</h3>
+          <div className="flex items-center justify-center gap-2">
+            <div className="h-px w-10 bg-amber-300" />
+            <span className="text-amber-400 text-xs">✦</span>
+            <div className="h-px w-10 bg-amber-300" />
+          </div>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto mb-16">
+          {videosEfectoAnime.map((src, i) => (
             <div key={i} onClick={() => setVideoActivo(src)} className="relative aspect-video bg-rose-100 rounded-3xl overflow-hidden cursor-pointer group shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 ring-1 ring-amber-100">
               <video src={src} className="w-full h-full object-cover" muted />
               <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition-colors">
