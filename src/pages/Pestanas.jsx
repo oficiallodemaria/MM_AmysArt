@@ -153,7 +153,7 @@ export default function Pestanas() {
         </div>
 
         <div className="text-center mb-6">
-          <h3 style={{ fontFamily: "'Playfair Display', serif" }} className="text-2xl text-gray-800 italic mb-2">Fotos · Hawaiana</h3>
+          <h3 style={{ fontFamily: "'Playfair Display', serif" }} className="text-2xl text-gray-800 italic mb-2">Fotos · Efecto Hawaiana</h3>
           <div className="flex items-center justify-center gap-2">
             <div className="h-px w-10 bg-amber-300" />
             <span className="text-amber-400 text-xs">✦</span>
@@ -208,7 +208,7 @@ export default function Pestanas() {
         </div>
 
         <div className="text-center mb-6">
-          <h3 style={{ fontFamily: "'Playfair Display', serif" }} className="text-2xl text-gray-800 italic mb-2">Video · Hawaiana</h3>
+          <h3 style={{ fontFamily: "'Playfair Display', serif" }} className="text-2xl text-gray-800 italic mb-2">Videos · Efecto Hawaiana</h3>
           <div className="flex items-center justify-center gap-2">
             <div className="h-px w-10 bg-amber-300" />
             <span className="text-amber-400 text-xs">✦</span>
@@ -229,7 +229,7 @@ export default function Pestanas() {
         </div>
 
         <div className="text-center mb-6">
-          <h3 style={{ fontFamily: "'Playfair Display', serif" }} className="text-2xl text-gray-800 italic mb-2">Efecto video</h3>
+          <h3 style={{ fontFamily: "'Playfair Display', serif" }} className="text-2xl text-gray-800 italic mb-2">Fotos · Efecto Anime</h3>
           <div className="flex items-center justify-center gap-2">
             <div className="h-px w-10 bg-amber-300" />
             <span className="text-amber-400 text-xs">✦</span>
