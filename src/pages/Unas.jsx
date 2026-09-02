@@ -58,6 +58,20 @@ const fotos = [
   "/MM_AmysArt/unas/46.jpeg",
   "/MM_AmysArt/unas/47.jpeg",
   "/MM_AmysArt/unas/48.jpeg",
+  "/MM_AmysArt/unas/49.jpeg",
+  "/MM_AmysArt/unas/50.jpeg",
+  "/MM_AmysArt/unas/51.jpeg",
+  "/MM_AmysArt/unas/52.jpeg",
+  "/MM_AmysArt/unas/53.jpeg",
+  "/MM_AmysArt/unas/54.jpeg",
+  "/MM_AmysArt/unas/55.jpeg",
+  "/MM_AmysArt/unas/56.jpeg",
+  "/MM_AmysArt/unas/57.jpeg",
+  "/MM_AmysArt/unas/58.jpeg",
+  "/MM_AmysArt/unas/59.jpeg",
+  "/MM_AmysArt/unas/60.jpeg",
+  "/MM_AmysArt/unas/61.jpeg",
+  "/MM_AmysArt/unas/62.jpeg",
 
 ]
 
@@ -84,6 +98,15 @@ const videos = [
   "/MM_AmysArt/unas/unas20.mp4",
   "/MM_AmysArt/unas/unas21.mp4",
   "/MM_AmysArt/unas/unas22.mp4",
+  "/MM_AmysArt/unas/unas23.mp4",
+  "/MM_AmysArt/unas/unas24.mp4",
+  "/MM_AmysArt/unas/unas25.mp4",
+  "/MM_AmysArt/unas/unas26.mp4",
+  "/MM_AmysArt/unas/unas27.mp4",
+  "/MM_AmysArt/unas/unas28.mp4",
+  "/MM_AmysArt/unas/unas29.mp4",
+  "/MM_AmysArt/unas/unas30.mp4",
+  "/MM_AmysArt/unas/unas31.mp4",
 ]
 
 export default function Unas() {
