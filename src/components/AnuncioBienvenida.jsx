@@ -38,13 +38,13 @@ export default function AnuncioBienvenida() {
           </div>
 
           <div className="p-6">
-            <p className="text-xs tracking-[0.2em] text-amber-500 uppercase font-semibold mb-2">Junio 2026</p>
+            <p className="text-xs tracking-[0.2em] text-amber-500 uppercase font-semibold mb-2">Agosto 2026</p>
             <h2 style={{ fontFamily: "'Playfair Display', serif" }} className="text-2xl italic text-gray-800 mb-2">¡Nuevo curso disponible!</h2>
             <div className="flex items-center gap-2 mb-3">
               <div className="h-px w-8 bg-amber-300" />
               <span className="text-amber-400 text-xs">✦</span>
             </div>
-            <p className="text-sm text-gray-500 leading-relaxed mb-5">Aprende las técnicas profesionales de uñas esculturales con María. ¡Cupos limitados, no te quedes fuera! 💅</p>
+            <p className="text-sm text-gray-500 leading-relaxed mb-5">Aprende las técnicas profesionales de pestañas con María. ¡Cupos limitados, no te quedes fuera!</p>
             <div className="flex gap-3">
               <button onClick={() => setVisible(false)} className="flex-1 text-sm border border-amber-200 text-amber-500 py-2.5 rounded-full hover:bg-amber-50 transition-colors">Cerrar</button>
               <a href="https://wa.me/525610407278?text=Hola%20MM%20Nails%20Art%20💅%20Me%20interesa%20el%20curso%20que%20anunciaron" target="_blank" rel="noopener noreferrer" onClick={() => setVisible(false)} className="flex-1 text-sm bg-rose-400 hover:bg-rose-500 text-white font-semibold py-2.5 rounded-full text-center transition-colors">Me interesa</a>
