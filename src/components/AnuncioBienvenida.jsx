@@ -47,7 +47,7 @@ export default function AnuncioBienvenida() {
             <p className="text-sm text-gray-500 leading-relaxed mb-5">Aprende las técnicas profesionales de uñas esculturales con María. ¡Cupos limitados, no te quedes fuera! 💅</p>
             <div className="flex gap-3">
               <button onClick={() => setVisible(false)} className="flex-1 text-sm border border-amber-200 text-amber-500 py-2.5 rounded-full hover:bg-amber-50 transition-colors">Cerrar</button>
-              <a href="https://wa.me/525610407278?text=Hola%20MM%20Nails%20Art%20💅%20Me%20interesa%20el%20curso%20que%20anunciaron" target="_blank" rel="noopener noreferrer" onClick={() => setVisible(false)} className="flex-1 text-sm bg-rose-400 hover:bg-rose-500 text-white font-semibold py-2.5 rounded-full text-center transition-colors">Me interesa</button>
+              <a href="https://wa.me/525610407278?text=Hola%20MM%20Nails%20Art%20💅%20Me%20interesa%20el%20curso%20que%20anunciaron" target="_blank" rel="noopener noreferrer" onClick={() => setVisible(false)} className="flex-1 text-sm bg-rose-400 hover:bg-rose-500 text-white font-semibold py-2.5 rounded-full text-center transition-colors">Me interesa</a>
             </div>
           </div>
 
