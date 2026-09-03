@@ -19,7 +19,7 @@ export default function AnuncioBienvenida() {
 
           <div className="relative">
             {!videoActivo ? (
-              <div className="relative h-52 overflow-hidden cursor-pointer" onClick={() => setVideoActivo(true)}>
+              <div className="relative overflow-hidden cursor-pointer" onClick={() => setVideoActivo(true)}>
                 <video src="/MM_AmysArt/noticias/curso.mp4" className="w-full h-full object-cover" muted autoPlay loop playsInline />
                 <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                   <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg ring-2 ring-amber-300">
@@ -30,7 +30,7 @@ export default function AnuncioBienvenida() {
                 <span className="absolute top-3 left-3 bg-amber-400 text-white text-xs font-bold px-3 py-1 rounded-full">✦ Novedad</span>
               </div>
             ) : (
-              <video src="/MM_AmysArt/noticias/curso.mp4" className="w-full h-52 object-cover" controls autoPlay />
+              <video src="/MM_AmysArt/noticias/curso.mp4" className="w-full object-contain max-h-72" controls autoPlay />
             )}
             <button onClick={() => setVisible(false)} className="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-600 hover:text-rose-400 transition-colors shadow-md z-10">
               <X size={16} />
