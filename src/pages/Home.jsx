@@ -1,4 +1,3 @@
-import AnuncioBienvenida from "../components/AnuncioBienvenida"
 import Navbar from "../components/Navbar"
 import Hero from "../components/Hero"
 import Servicios from "../components/Servicios"
@@ -12,7 +11,6 @@ const CALENDLY_URL = "https://cal.com/mmnailsart"
 export default function Home() {
   return (
     <>
-      <AnuncioBienvenida />
       <Navbar calendlyUrl={CALENDLY_URL} />
       <Hero calendlyUrl={CALENDLY_URL} />
       <Servicios />

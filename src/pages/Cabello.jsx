@@ -12,6 +12,7 @@ const videosAlisados = [
   "/MM_AmysArt/cabello/alisado6.mp4",
   "/MM_AmysArt/cabello/alisado7.mp4",
   "/MM_AmysArt/cabello/alisado8.mp4",
+  "/MM_AmysArt/cabello/alisado9.mp4",
 ]
 
 const fotosAlisados = [
@@ -22,7 +23,11 @@ const fotosExtensiones = [
   "/MM_AmysArt/cabello/exten1.jpeg",
 ]
 
-const videoExtensiones = "/MM_AmysArt/cabello/extenv1.mp4"
+const videoExtensiones = [ 
+  "/MM_AmysArt/cabello/extenv1.mp4",
+  "/MM_AmysArt/cabello/extenv2.mp4",
+  ]
+
 
 function Galeria({ fotos, onSeleccionar }) {
   return (
