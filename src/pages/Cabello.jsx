@@ -23,11 +23,10 @@ const fotosExtensiones = [
   "/MM_AmysArt/cabello/exten1.jpeg",
 ]
 
-const videoExtensiones = [ 
+const videosExtensiones = [
   "/MM_AmysArt/cabello/extenv1.mp4",
   "/MM_AmysArt/cabello/extenv2.mp4",
-  ]
-
+]
 
 function Galeria({ fotos, onSeleccionar }) {
   return (
@@ -191,15 +190,8 @@ export default function Cabello() {
           <div className="mb-8"><Galeria fotos={fotosExtensiones} onSeleccionar={setFotoExtensiones} /></div>
 
           <SeccionTitulo subtitulo="En movimiento" titulo="Videos" />
-          <div className="max-w-md mx-auto mb-8">
-            <div onClick={() => setVideoActivo(videoExtensiones)} className="relative aspect-video bg-rose-100 rounded-3xl overflow-hidden cursor-pointer group shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1 ring-1 ring-amber-100">
-              <video src={videoExtensiones} className="w-full h-full object-cover" muted />
-              <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition-colors">
-                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg ring-2 ring-amber-300">
-                  <Play size={22} className="text-rose-400 ml-1" />
-                </div>
-              </div>
-            </div>
+          <div className="mb-8">
+            <GaleriaVideos videos={videosExtensiones} onSeleccionar={setVideoActivo} />
           </div>
         </div>
 
