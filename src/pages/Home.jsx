@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar"
 import Hero from "../components/Hero"
 import Servicios from "../components/Servicios"
 import Trabajos from "../components/Trabajos"
+import Destacado from "../components/Destacado"
 import Promos from "../components/Promos"
 import Info from "../components/Info"
 import Footer from "../components/Footer"
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero calendlyUrl={CALENDLY_URL} />
       <Servicios />
       <Trabajos />
+      <Destacado />
       <Promos />
       <Info calendlyUrl={CALENDLY_URL} />
       <Footer calendlyUrl={CALENDLY_URL} />
