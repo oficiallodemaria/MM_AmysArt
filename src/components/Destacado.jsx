@@ -37,8 +37,8 @@ export default function Destacado() {
               ✦ DESTACADO
             </div>
             <video
-              src="/MM_AmysArt/destacado/video.mp4"
-              poster="/MM_AmysArt/destacado/foto.jpeg"
+              src="/MM_AmysArt/destacado/pia.mp4"
+              poster="/MM_AmysArt/destacado/piaf.jpeg"
               controls
               playsInline
               preload="metadata"
@@ -48,7 +48,7 @@ export default function Destacado() {
 
           <div className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
             <img
-              src="/MM_AmysArt/destacado/foto.jpeg"
+              src="/MM_AmysArt/destacado/piaf.jpeg"
               alt="Diseño exclusivo para Pía Sanz"
               className="w-full h-auto"
             />
