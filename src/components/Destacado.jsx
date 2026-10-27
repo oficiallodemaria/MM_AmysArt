@@ -9,7 +9,7 @@ const trabajos = [
   {
     frase: "Unas manos hechas para la pasarela", // cambia este texto
     detalle: "Un diseño exclusivo realizado para la modelo",
-    nombre: "Nombre de la modelo",
+    nombre: "Yuri Copete",
     foto: "/MM_AmysArt/destacado/yurif.jpeg",
   },
 ]
