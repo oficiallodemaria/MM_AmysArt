@@ -1,13 +1,13 @@
 const trabajos = [
   {
     frase: "Unas manos que brillan en la pantalla",
-    detalle: "Un diseño exclusivo realizado para la actríz",
+    detalle: "Un diseño exclusivo realizado para la actriz",
     nombre: "Pía Sanz",
     foto: "/MM_AmysArt/destacado/piaf.jpeg",
     video: "/MM_AmysArt/destacado/pia.mp4",
   },
   {
-    frase: "Unas manos hechas para la pasarela", // cambia este texto
+    frase: "Unas manos hechas para la pasarela",
     detalle: "Un diseño exclusivo realizado para la modelo",
     nombre: "Yuri Copete",
     foto: "/MM_AmysArt/destacado/yurif.jpeg",
@@ -52,7 +52,7 @@ export default function Destacado() {
 
               <div className={`grid gap-8 items-center mx-auto ${t.video ? "md:grid-cols-2 max-w-4xl" : "max-w-sm"}`}>
                 {t.video && (
-                  <div className="relative rounded-3xl overflow-hidden shadow-xl ring-2 ring-amber-400 bg-black">
+                  <div className="relative rounded-3xl overflow-hidden shadow-xl shadow-amber-200/50 ring-2 ring-amber-400 bg-black">
                     <div className="absolute top-3 right-3 z-10 bg-amber-400 text-white text-[10px] font-bold px-2 py-0.5 rounded-full tracking-wide">
                       ✦ DESTACADO
                     </div>
@@ -67,7 +67,7 @@ export default function Destacado() {
                   </div>
                 )}
 
-                <div className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                <div className="rounded-3xl overflow-hidden shadow-xl shadow-amber-200/50 ring-2 ring-amber-400 hover:shadow-2xl hover:shadow-amber-300/60 transition-all duration-500 hover:-translate-y-1">
                   <img src={t.foto} alt={`Diseño exclusivo para ${t.nombre}`} className="w-full h-auto" />
                 </div>
               </div>
