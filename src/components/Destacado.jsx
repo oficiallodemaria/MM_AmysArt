@@ -1,7 +1,7 @@
 const trabajos = [
   {
     frase: "Unas manos que brillan en la pantalla",
-    detalle: "Un diseño exclusivo realizado para",
+    detalle: "Un diseño exclusivo realizado para la actríz",
     nombre: "Pía Sanz",
     foto: "/MM_AmysArt/destacado/piaf.jpeg",
     video: "/MM_AmysArt/destacado/pia.mp4",
